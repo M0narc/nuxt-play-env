@@ -89,6 +89,34 @@ $route is a Vue component that we can use
 to redirect using nuxt use this
 <nuxt-link to="/users"> </nuxt-link>
 
+Validation property
+"validate" can be used as an assert,
+in the example below we're checking if 
+data.params.id returns a number in order to continue
+otherwise it does not pass the validation
+
+export default {
+        validate (data){
+            console.log(data)
+            return /[0-9]/.test(data.params.id)
+        }
+    }
+
+
+if we want to have nested routes we can create
+a .vue with the same name as the route 
+folder users might have a users.vue as a wrapper
+
+Layouts, Pages and Components
+
+the layout is your main wrapping element on the page
+the layout allows you to define a frame, both from a styling perspective as well as regarding some shared functionalitylike a shared header,
+you can have multiple layout sso you can create multiple layoutsfor different parts of your page
+
+the pages on the other hand can have nested pages but can allowsuse components these ordinary normal view components,
+which in a nuxt project you would store in the components folder, these are normal vue components that are reusable
+
+
 
 
 

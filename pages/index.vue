@@ -1,7 +1,9 @@
 <template>
   <selection id="home" class="container">
-   <nuxt-link to="/users">Users</nuxt-link>
-   <nuxt-link to="/products">Users</nuxt-link>
+  <ul>
+    <li><nuxt-link to="/users">Users</nuxt-link></li>
+    <li><nuxt-link to="/products">product</nuxt-link></li>
+  </ul>
   </selection>
 </template>
 

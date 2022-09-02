@@ -17,6 +17,7 @@
             onLoadProduct(){
                 this.$router.push('/products/' + this.productId)
             }
-        }
+        },
+        layout: 'users'
     }
 </script>
