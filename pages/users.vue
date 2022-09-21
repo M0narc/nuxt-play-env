@@ -27,6 +27,6 @@ export default {
 
 <style>
 input[type="radio"] {
-    margin-right: 50px;
+    margin-right: 0px;
 }
 </style>
